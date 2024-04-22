@@ -15,7 +15,7 @@ async function startProgram() {
 
 }
 */
-
+/*
 async function startProgram() {
 	setMainLed({ r: 0, g: 0, b: 255 });
 	await speak("Hello Square", true);
@@ -27,5 +27,20 @@ async function startProgram() {
 			await delay(1);
 
 	}
+
+}
+*/
+async function startProgram() {
+	await roll((getHeading() + 0), 60, 2);
+	await delay(1);
+	await roll((getHeading() + 180), 60, 2);
+	await delay(2);
+	await roll((getHeading() + 180), 100, 2);
+	await delay(2);
+	await roll((getHeading() + 180), 100, 2);
+	await delay(2);
+	await roll((getHeading() + 90), 120, 2);
+	
+
 
 }
