@@ -6,5 +6,6 @@
 //Program URL: https://edu.sphero.com/program/16743350/edit
 
 async function startProgram() {
-	// Write code here
+	await roll((getHeading() + 0), 60, 1.8);
+	
 }
