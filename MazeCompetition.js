@@ -1,3 +1,10 @@
+// Programmer: Preston Simmons
+// Team Member: LaDanien Shelton
+//Bolt ID: 6B78
+//Date: 4.30.2024
+//Program: Maze Competition
+//Program URL:https://edu.sphero.com/program/16788335/edit
+
 async function startProgram() {
 	// Programmer: Preston Simmons - Start Text & Audio Checkpoint Commit - Date:04/30/24
 	   await scrollMatrixText('Start!', {R: 66, G: 56, b: 255}, 90, true)
@@ -11,10 +18,15 @@ async function startProgram() {
 	setMainLed({ r: 0, g: 0, b: 255});
 	await roll((getHeading() + 0), 60, 2.7);
    
+
+
+
+   //Programmer:Preston Simmons - Sound One Checkpoint Commit - Date: 05/05/24
+	await roll((getHeading() + 90), 60, 1.7);
+	await delay(1);
+	await Sound.Menu.Accept.play(true);
+
 }
-
-
-   //Programmer:           - Sound One Checkpoint Commit - Date:
 
 
 
@@ -40,5 +52,7 @@ async function startProgram() {
 
 	// Programmer			- Finish Text & Audio Checkpoint Commit - Date
 
-}
+
+
+
 	
