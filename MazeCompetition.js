@@ -47,12 +47,13 @@ async function startProgram() {
 
 
 
-	// Programmer Preston Simmons - Green LED Checkpoint Commit - Date: 5/2/24
+	// Programmer Preston Simmons - Green LED Checkpoint Commit - Date: 5/3/24
 	await roll((getHeading() + 90), 60, 0.85);
 	await delay(1);
 	await roll((getHeading() + 50), 60, 0.5);
 	await delay(1);
 	await roll((getHeading() - 90), 60, 0.8);
+	setMainLed({ r: 0, g: 255, b: 0});
 	
 
 
