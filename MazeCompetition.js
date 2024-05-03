@@ -14,7 +14,7 @@ async function startProgram() {
 
 
 	// Programmer:LaDanien Shelton- Blue LED Cheackpoint Commit - Date: 05/01/24
-	await roll((getHeading() + 0), 60, 2.6);
+	await roll((getHeading() + 0), 60, 2.7);
    	await delay(1);
 
 
@@ -33,6 +33,7 @@ async function startProgram() {
 	await roll((getHeading() + 90), 60, 1.3);
 	await delay(1);
 	await roll((getHeading() + 30), 60, 1.1);
+	await delay(1);
 	setMainLed({ r: 255, g: 0, b: 0});
 	await delay(1);
 
@@ -41,7 +42,7 @@ async function startProgram() {
 	//Programmer: Preston Simmons - Sound Two Checkpoint Commit - Date: 5/2/24
 	await roll((getHeading() - 90), 60, 0.6);
 	await delay(1);
-	await roll((getHeading() - 73), 60, 1.2);
+	await roll((getHeading() - 73), 60, 1.4);
 	await Sound.Menu.Accept.play(true);
 	
 
@@ -52,14 +53,15 @@ async function startProgram() {
 	await delay(1);
 	await roll((getHeading() + 50), 60, 0.5);
 	await delay(1);
-	await roll((getHeading() - 90), 60, 0.8);
+	await roll((getHeading() - 90), 60, 1);
+	await delay(1);
 	setMainLed({ r: 0, g: 255, b: 0});
 	
 
 
 
 
-	// Programmer 			- Purple LED & Sound Three Checkpoint Commit - Date:
+	// Programmer Preston Simmons - Purple LED & Sound Three Checkpoint Commit - Date: 5//3/24
 
 
 
