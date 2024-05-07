@@ -6,6 +6,7 @@
 //Program URL:https://edu.sphero.com/program/16788335/edit
 
 async function startProgram() {
+	
 	// Programmer: Preston Simmons - Start Text & Audio Checkpoint Commit - Date:04/30/24
 	   await scrollMatrixText('Start!', {R: 66, G: 56, b: 255}, 90, true)
 	   await delay(1)
@@ -21,7 +22,7 @@ async function startProgram() {
 
    //Programmer:Preston Simmons - Sound One Checkpoint Commit - Date:
 	setMainLed({ r: 0, g: 0, b: 255});
-	await roll((getHeading() + 90), 60, 1.8);
+	await roll((getHeading() + 90), 60, 1.9);
 	await delay(1);
 	await Sound.Menu.Accept.play(true);
 
@@ -42,27 +43,34 @@ async function startProgram() {
 	//Programmer: Preston Simmons - Sound Two Checkpoint Commit - Date: 5/2/24
 	await roll((getHeading() - 90), 60, 0.6);
 	await delay(1);
-	await roll((getHeading() - 73), 60, 1.4);
+	await roll((getHeading() - 73), 60, 1.2);
 	await Sound.Menu.Accept.play(true);
 	
 
 
 
 	// Programmer Preston Simmons - Green LED Checkpoint Commit - Date: 5/3/24
-	await roll((getHeading() + 90), 60, 0.85);
+	await roll((getHeading() + 90), 60, 1);
 	await delay(1);
-	await roll((getHeading() + 50), 60, 0.5);
-	await delay(1);
-	await roll((getHeading() - 90), 60, 1);
+	await roll((getHeading() + 50), 60, 0.8);
 	await delay(1);
 	setMainLed({ r: 0, g: 255, b: 0});
+	await delay(1);
+
+
+
+
+	// Programmer 			- Purple LED & Sound Three Checkpoint Commit - Date:
+	await roll((getHeading() - 90), 60, 0.9);
+	await delay(1);
+	await roll((getHeading() - 90), 60, 0.6);
+	await delay(1);
+	setMainLed({ r: 126, g: 0, b: 128});
+	await delay(1);
+	await roll((getHeading() - 0), 60, 0.5);
+	await delay(1);
+	await roll((getHeading() + 90), 60, 1);
 	
-
-
-
-
-	// Programmer Preston Simmons - Purple LED & Sound Three Checkpoint Commit - Date: 5//3/24
-
 
 
 
